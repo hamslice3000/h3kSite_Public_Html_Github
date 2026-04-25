@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DOGEOLITH</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <style>
+		audio {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	</style>
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body id="DOGEOLITH">
+    <!--Audio Play -->
+    <audio controls autoplay loop>
+	  <source src="strauss-remix-also-sprach-zarathustra-2001-song.mp3" type="audio/mpeg">
+	</audio>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer bounds="tight" src="DOGEOLITHWARPLIGHTS.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="cd4a25d8-7ca4-42c6-bbd4-6479db70d516" poster="poster.png" shadow-intensity="2" exposure="2" skybox-image="cd4a25d8-7ca4-42c6-bbd4-6479db70d516" shadow-softness="1" auto-rotate>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
