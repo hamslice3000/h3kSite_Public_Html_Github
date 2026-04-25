@@ -1,0 +1,1 @@
+{\n  "name": "h3k-site",\n  "version": "1.0.0",\n  "private": true,\n  "scripts": {\n    "start": "node server.js"\n  },\n  "dependencies": {\n    "express": "*"\n  }\n}
